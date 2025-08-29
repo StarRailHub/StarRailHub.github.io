@@ -1,4 +1,213 @@
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网站维护中 - 公司名称</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #333;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .logo {
+            margin-bottom: 30px;
+        }
+        
+        .logo h1 {
+            color: #2c3e50;
+            font-size: 28px;
+            font-weight: 700;
+        }
+        
+        .main-icon {
+            font-size: 64px;
+            margin-bottom: 20px;
+            color: #3498db;
+        }
+        
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        
+        p {
+            color: #7f8c8d;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+        
+        .progress-container {
+            background: #ecf0f1;
+            border-radius: 10px;
+            height: 12px;
+            margin: 30px 0;
+            overflow: hidden;
+        }
+        
+        .progress-bar {
+            background: linear-gradient(90deg, #3498db, #2ecc71);
+            height: 100%;
+            width: 65%;
+            border-radius: 10px;
+            animation: progressAnimation 1.5s ease-in-out infinite alternate;
+        }
+        
+        @keyframes progressAnimation {
+            0% { width: 65%; }
+            100% { width: 68%; }
+        }
+        
+        .contact-info {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 25px 0;
+            text-align: left;
+        }
+        
+        .contact-info h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .contact-info h3 i {
+            margin-right: 10px;
+            color: #3498db;
+        }
+        
+        .contact-list {
+            list-style: none;
+        }
+        
+        .contact-list li {
+            margin: 12px 0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .contact-list i {
+            width: 24px;
+            margin-right: 12px;
+            color: #3498db;
+        }
+        
+        .contact-list a {
+            color: #3498db;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .contact-list a:hover {
+            color: #2c3e50;
+            text-decoration: underline;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #f1f2f6;
+            color: #3498db;
+            transition: all 0.3s;
+        }
+        
+        .social-links a:hover {
+            background: #3498db;
+            color: white;
+            transform: translateY(-3px);
+        }
+        
+        .footer {
+            margin-top: 30px;
+            color: #95a5a6;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 25px;
+            }
+            
+            .main-icon {
+                font-size: 48px;
+            }
+            
+            h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
 <body>
-<p><a href="https://space.bilibili.com/3493280457165617">网站开发中，欢迎关注B站中子P</a>
+    <div class="container">
+        <div class="logo">
+            <h1></h1>
+        </div>
+        
+        <div class="main-icon">
+            <i class="fas fa-tools"></i>
+        </div>
+        
+        <h2>网站开发中</h2>
+        
+        <p>我们正在对网站进行开发 | 你可以访问我的主页充电支持</p>
+        
+        <div class="progress-container">
+            <div class="progress-bar"></div>
+        </div>
+        
+        <div class="contact-info">
+            <h3> 本网站服务对接私有DNS解析服务（建设中），VPN服务</h3>
+            
+           
+        </div>
+         <div class="social-links">
+            <a href="https://space.bilibili.com/3493280457165617" aria-label="Bilibili"><i class="fab fa-bilibili"></i></a>
+            
+        </div>
+       
+        
+        <div class="footer">
+            <p>© 2025 版权所有</p>
+        </div>
+    </div>
+</body>
 </html>
