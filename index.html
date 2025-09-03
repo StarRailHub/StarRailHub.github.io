@@ -1,213 +1,97 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
+<!-- saved from url=(0014)about:internet -->
+<html lang="zh"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>网站维护中</title>
+    <title>主页</title>
+    <meta name="keywords" content="三月七 CTF战队">
+    <script type="text/javascript" src="./files/jquery.min.js"></script>
+    <link rel="stylesheet" href="./files/buttons.css">
+    <link rel="stylesheet" href="./files/app.css" type="text/css" media="all">
+
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        
         body {
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-            color: #333;
+            background-image: url('files/bg.webp');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
         }
-        
-        .container {
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            width: 100%;
-            max-width: 600px;
-            padding: 40px;
-            text-align: center;
-        }
-        
-        .logo {
-            margin-bottom: 30px;
-        }
-        
-        .logo h1 {
-            color: #2c3e50;
-            font-size: 28px;
-            font-weight: 700;
-        }
-        
-        .main-icon {
-            font-size: 64px;
-            margin-bottom: 20px;
-            color: #3498db;
-        }
-        
-        h2 {
-            color: #2c3e50;
-            margin-bottom: 20px;
-            font-size: 24px;
-        }
-        
-        p {
-            color: #7f8c8d;
-            line-height: 1.6;
-            margin-bottom: 25px;
-        }
-        
-        .progress-container {
-            background: #ecf0f1;
-            border-radius: 10px;
-            height: 12px;
-            margin: 30px 0;
-            overflow: hidden;
-        }
-        
-        .progress-bar {
-            background: linear-gradient(90deg, #3498db, #2ecc71);
-            height: 100%;
-            width: 65%;
-            border-radius: 10px;
-            animation: progressAnimation 1.5s ease-in-out infinite alternate;
-        }
-        
-        @keyframes progressAnimation {
-            0% { width: 65%; }
-            100% { width: 68%; }
-        }
-        
-        .contact-info {
-            background: #f8f9fa;
-            border-radius: 8px;
-            padding: 20px;
-            margin: 25px 0;
-            text-align: left;
-        }
-        
-        .contact-info h3 {
-            color: #2c3e50;
-            margin-bottom: 15px;
-            font-size: 18px;
-            display: flex;
-            align-items: center;
-        }
-        
-        .contact-info h3 i {
-            margin-right: 10px;
-            color: #3498db;
-        }
-        
-        .contact-list {
-            list-style: none;
-        }
-        
-        .contact-list li {
-            margin: 12px 0;
-            display: flex;
-            align-items: center;
-        }
-        
-        .contact-list i {
-            width: 24px;
-            margin-right: 12px;
-            color: #3498db;
-        }
-        
-        .contact-list a {
-            color: #3498db;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        
-        .contact-list a:hover {
-            color: #2c3e50;
-            text-decoration: underline;
-        }
-        
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 30px;
-        }
-        
-        .social-links a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background: #f1f2f6;
-            color: #3498db;
-            transition: all 0.3s;
-        }
-        
-        .social-links a:hover {
-            background: #3498db;
-            color: white;
-            transform: translateY(-3px);
-        }
-        
-        .footer {
-            margin-top: 30px;
-            color: #95a5a6;
-            font-size: 14px;
-        }
-        
-        @media (max-width: 480px) {
-            .container {
-                padding: 25px;
-            }
-            
-            .main-icon {
-                font-size: 48px;
-            }
-            
-            h2 {
-                font-size: 20px;
-            }
-        }
-    </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
-    <div class="container">
-        <div class="logo">
-            <h1></h1>
-        </div>
-        
-        <div class="main-icon">
-            <i class="fas fa-tools"></i>
-        </div>
-        
-        <h2>网站开发中</h2>
-        
-        <p>我们正在对网站进行开发 | 你可以访问我的主页充电支持</p>
-        
-        <div class="progress-container">
-            <div class="progress-bar"></div>
-        </div>
-        
-        <div class="contact-info">
-            <h3> 本网站服务对接私有DNS解析服务（建设中），VPN服务</h3>
-            
-           
-        </div>
-         <div class="social-links">
-            <a href="https://space.bilibili.com/3493280457165617" aria-label="Bilibili"><i class="fab fa-bilibili"></i></a>
-            
-        </div>
        
         
-        <div class="footer">
-            <p>© 2025 版权所有</p>
+    </style>
+</head>
+<body class="home page">
+<noscript>
+    <div style="color: red; font-size: 20px; text-align: center; margin-top: 20px;">
+        您的浏览器未启用JavaScript，请启用JavaScript以查看完整内容。
+    </div>
+</noscript>
+<div class="jumbotron">
+    <div class="container">
+        <div class="splash">
+            <div class="content">
+                
+                <h1 class="wow fadeIn animated" data-wow-delay="750ms" style="visibility: visible; animation-delay: 750ms; animation-name: fadeIn; border-bottom:none;">
+                    三月七CTF战队
+                </h1>
+                <p class="description wow fadeIn animated" data-wow-delay="1230ms" style="visibility: visible; animation-delay: 1230ms; animation-name: fadeIn;">
+                    歡迎到來，請关注我并对我的作品一键三连<br>欧尼酱~
+                </p>
+                <script>
+                    //                    document.write(`<a href="https://space.bilibili.com/3493280457165617" title="我的B站主页" target="_blank" class="mr15 button button-glow button-border  button-rounded button-primary">我的B站主页</a>
+                    //                                <a href="https://live.bilibili.com/1861780674" title="B站直播间入口" target="_blank" class="mr15 button button-glow button-border  button-rounded button-action">不定期直播</a>
+                    //                                <br>
+                    //                                <a href="https://www.root-servers.org.cn/" style="display: block;margin-top:20px;font-size:14px">【网站主地址：www.root-servers.org.cn/】</a>
+                    //                               <br>
+                    //                                <br>
+                    //                                <div class="copyright">
+                    //                                    友链：
+                    //
+                    //                                    <br><br>中国互联网络信息中心：<a href="https://www.cnnic.cn/index.html" target="_blank" rel="nofollow">www.cnnic.cn</a>
+                    //                                    <br><br>中国长城网：<a href="http://www.cgw.cn/" target="_blank" rel="nofollow">www.cgw.cn</a>；
+                    //                                    <br><br>垃圾信息举报：<a href="https://www.12321.cn/warn.php" target="_blank" rel="nofollow">12321.cn</a>
+                    //                                    <br><br><br>Our Tor Site：<a href="http://wini54i81q9xgpa8tso7mrw3egviyahcq7lwja6p9hop05k9dell8nmu.onion" target="_blank" rel="nofollow">ONION</a>
+                    //                                </div>
+                    //                                <div class="bottom">
+                    //                                     网站服务由<a href="https://www.cnnic.cn/index.html" style="display: block;margin-top:20px;font-size:13px">中国互联网信息中心（CNNIC）</a>托管，CNNIC不对网站内容负责。
+                    //                                </div>`)
+
+                </script>
+                <a href="https://space.bilibili.com/3493280457165617" title="我的B站主页" target="_blank" class="mr15 button button-glow button-border  button-rounded button-primary">我的B站主页</a>
+                <a href="https://live.bilibili.com/1861780674" title="B站直播间入口" target="_blank" class="mr15 button button-glow button-border  button-rounded button-action">不定期直播</a>
+                <br>
+                <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=2155423468&auto=1&height=66"></iframe>
+                <a href="https://www.root-servers.org.cn/" style="display: block;margin-top:20px;font-size:14px">【网站主地址：www.root-servers.org.cn/】</a>
+                <br>
+                <br>
+                <div class="copyright">
+                    友链：
+
+                    <br><br>中国互联网络信息中心：<a href="https://www.cnnic.cn/index.html" target="_blank" rel="nofollow">www.cnnic.cn</a>
+                    <br><br>中国长城网：<a href="http://www.cgw.cn/" target="_blank" rel="nofollow">www.cgw.cn</a>；
+                    <br><br>垃圾信息举报：<a href="https://www.12321.cn/warn.php" target="_blank" rel="nofollow">12321.cn</a>
+                    <br><br><br>Our Tor Site：<a href="http://wini54i81q9xgpa8tso7mrw3egviyahcq7lwja6p9hop05k9dell8nmu.onion" target="_blank" rel="nofollow">ONION</a>
+                </div>
+                <div class="bottom">
+                    <a href="https://www.cnnic.cn/index.html" style="display: block;margin-top:20px;font-size:13px">网站服务由中国互联网信息中心（CNNIC）托管，CNNIC不对网站内容负责。</a>
+                </div>
+
+            </div>
         </div>
     </div>
-</body>
-</html>
+    <canvas id="canvas" width="932" height="941"></canvas>
+</div>
+<audio id="audio" autoplay="">
+    <source src="" type="audio/mpeg">
+</audio>
+<script src="./files/hovertreewelcome.js"></script>
+<script src="./files/bg_window.js"></script>
+<script async="" src="./files/js"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    // This is no Thing,你就这么喜欢扒源码吗？
+</script>
+
+
+</body></html>
